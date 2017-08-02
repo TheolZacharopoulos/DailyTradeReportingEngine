@@ -49,6 +49,13 @@
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.7.6.201602180812</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/Main.java</exclude>
+                        <exclude>**/FakeInstructionsGenerator.java</exclude>
+                        <exclude>**/ReportGenerator.java</exclude>
+                    </excludes>
+                </configuration>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
