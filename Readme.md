@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/TheolZacharopoulos/DailyTradeReportingEngine.svg?branch=master)](https://travis-ci.org/TheolZacharopoulos/DailyTradeReportingEngine)
 
-[![Coverage Status](https://coveralls.io/repos/github/TheolZacharopoulos/DailyTradeReportingEngine/badge.svg?branch=master)](https://coveralls.io/github/TheolZacharopoulos/DailyTradeReportingEngine?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/TheolZacharopoulos/DailyTradeReportingEngine/badge.svg?branch=master&bust=1)](https://coveralls.io/github/TheolZacharopoulos/DailyTradeReportingEngine?branch=master)
 
-[![BCH compliance](https://bettercodehub.com/edge/badge/TheolZacharopoulos/DailyTradeReportingEngine?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/TheolZacharopoulos/DailyTradeReportingEngine?branch=master&bust=1)](https://bettercodehub.com/)
 
 # Daily Trade Reporting Engine
 
