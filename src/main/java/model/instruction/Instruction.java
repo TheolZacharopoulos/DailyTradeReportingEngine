@@ -27,22 +27,6 @@ public class Instruction {
     public Instruction(
             String entity,
             TradeAction action,
-            Currency currency,
-            LocalDate instructionDate,
-            LocalDate settlementDate,
-            BigDecimal agreedFx,
-            int units,
-            BigDecimal pricePerUnit)
-    {
-        this(
-            entity, action,
-                instructionDate, settlementDate,
-            new InstructionDetails(currency, agreedFx, units, pricePerUnit));
-    }
-
-    public Instruction(
-            String entity,
-            TradeAction action,
             LocalDate instructionDate,
             LocalDate settlementDate,
             InstructionDetails details)

@@ -1,6 +1,7 @@
 package business_logic;
 
 import model.instruction.Instruction;
+import model.instruction.InstructionDetails;
 import model.instruction.TradeAction;
 import org.junit.Test;
 
@@ -18,12 +19,13 @@ public class InstructionSettlementDateCalculatorTest {
         final Instruction fakeInstruction = new Instruction(
                 "E1",
                 TradeAction.BUY,
-                Currency.getInstance("SGD"), // Its Default
                 LocalDate.of(2017, 3, 10),
                 initialSettlementDate,
-                BigDecimal.valueOf(0.50),
-                200,
-                BigDecimal.valueOf(100.25));
+                new InstructionDetails(
+                        Currency.getInstance("SGD"),
+                        BigDecimal.valueOf(0.50),
+                        200,
+                        BigDecimal.valueOf(100.25)));
 
         // calculate new settlement day
         InstructionSettlementDateCalculator.calculateSettlementDate(fakeInstruction);
@@ -39,12 +41,13 @@ public class InstructionSettlementDateCalculatorTest {
         final Instruction fakeInstruction = new Instruction(
                 "E1",
                 TradeAction.BUY,
-                Currency.getInstance("USD"), // Its Default
                 LocalDate.of(2017, 3, 10),
                 initialSettlementDate,
-                BigDecimal.valueOf(1),
-                200,
-                BigDecimal.valueOf(100.25));
+                new InstructionDetails(
+                        Currency.getInstance("SGD"),
+                        BigDecimal.valueOf(1),
+                        200,
+                        BigDecimal.valueOf(100.25)));
 
         // calculate new settlement day
         InstructionSettlementDateCalculator.calculateSettlementDate(fakeInstruction);
@@ -60,12 +63,13 @@ public class InstructionSettlementDateCalculatorTest {
         final Instruction fakeInstruction = new Instruction(
                 "E1",
                 TradeAction.BUY,
-                Currency.getInstance("AED"), // Its Arabia (AED)
                 LocalDate.of(2017, 3, 10),
                 initialSettlementDate,
-                BigDecimal.valueOf(0.50),
-                200,
-                BigDecimal.valueOf(100.25));
+                new InstructionDetails(
+                        Currency.getInstance("AED"), // Its Arabia (AED)
+                        BigDecimal.valueOf(0.50),
+                        200,
+                        BigDecimal.valueOf(100.25)));
 
         // calculate new settlement day
         InstructionSettlementDateCalculator.calculateSettlementDate(fakeInstruction);
@@ -81,12 +85,13 @@ public class InstructionSettlementDateCalculatorTest {
         final Instruction fakeInstruction = new Instruction(
                 "E1",
                 TradeAction.BUY,
-                Currency.getInstance("SAR"), // Its Arabia (SAR)
                 LocalDate.of(2017, 3, 10),
                 initialSettlementDate,
-                BigDecimal.valueOf(0.50),
-                200,
-                BigDecimal.valueOf(100.25));
+                new InstructionDetails(
+                        Currency.getInstance("SAR"), // Its Arabia (SAR)
+                        BigDecimal.valueOf(0.50),
+                        200,
+                        BigDecimal.valueOf(100.25)));
 
         // calculate new settlement day
         InstructionSettlementDateCalculator.calculateSettlementDate(fakeInstruction);

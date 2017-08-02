@@ -6,7 +6,7 @@ import java.util.Currency;
 /**
  * Represents the price details of an instruction
  */
-class InstructionDetails {
+public class InstructionDetails {
     // In which currency
     private final Currency currency;
 
@@ -22,7 +22,7 @@ class InstructionDetails {
     // The total trade amount in USD
     private final BigDecimal tradeAmount;
 
-    InstructionDetails(Currency currency, BigDecimal agreedFx, int units, BigDecimal pricePerUnit) {
+    public InstructionDetails(Currency currency, BigDecimal agreedFx, int units, BigDecimal pricePerUnit) {
         this.currency = currency;
         this.agreedFx = agreedFx;
         this.units = units;

@@ -19,12 +19,13 @@ public class InstructionTest {
         final Instruction fakeInstruction = new Instruction(
                 "E1",
                 TradeAction.BUY,
-                Currency.getInstance("SGD"),
                 LocalDate.of(2017, 3, 10),
                 LocalDate.of(2017, 3, 20), // Its a Monday
-                agreedFx,
-                units,
-                pricePerUnit);
+                new InstructionDetails(
+                        Currency.getInstance("SGD"),
+                        agreedFx,
+                        units,
+                        pricePerUnit));
 
         // test initialization
         assertEquals(agreedFx, fakeInstruction.getAgreedFx());
