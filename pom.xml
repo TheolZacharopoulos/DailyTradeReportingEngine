@@ -51,9 +51,9 @@
                 <version>0.7.6.201602180812</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/Main.java</exclude>
-                        <exclude>**/FakeInstructionsGenerator.java</exclude>
-                        <exclude>**/ReportGenerator.java</exclude>
+                        <exclude>Main.java</exclude>
+                        <exclude>utils/FakeInstructionsGenerator.java</exclude>
+                        <exclude>business_logic/reports/ReportGenerator.java</exclude>
                     </excludes>
                 </configuration>
                 <executions>
