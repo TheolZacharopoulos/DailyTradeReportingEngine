@@ -1,3 +1,5 @@
+exclude:
+- /src/main/java/utils/FakeInstructionsGenerator.java
 component_depth: 4
 languages:
 - java
