@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/TheolZacharopoulos/DailyTradeReportingEngine.svg?branch=master)](https://travis-ci.org/TheolZacharopoulos/DailyTradeReportingEngine)
+
 [![BCH compliance](https://bettercodehub.com/edge/badge/TheolZacharopoulos/DailyTradeReportingEngine?branch=master)](https://bettercodehub.com/)
 
 # Daily Trade Reporting Engine
