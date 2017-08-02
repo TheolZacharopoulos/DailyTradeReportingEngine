@@ -1,3 +1,5 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/TheolZacharopoulos/DailyTradeReportingEngine?branch=master)](https://bettercodehub.com/)
+
 # Daily Trade Reporting Engine
 
 A simple daily trade reporting engine for incoming instructions.
