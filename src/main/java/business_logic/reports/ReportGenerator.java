@@ -1,5 +1,7 @@
-package business_logic;
+package business_logic.reports;
 
+import business_logic.InstructionSettlementDateCalculator;
+import business_logic.InstructionSettlementStatsCalculator;
 import business_logic.ranking.Rank;
 import model.instruction.Instruction;
 
@@ -9,9 +11,10 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Set;
 
-public class ReportGenerator {
+public class ReportGenerator implements IReportGenerator {
     private StringBuilder stringBuilder = new StringBuilder();
 
+    @Override
     public String generateInstructionsReport(Set<Instruction> instructions) {
         // first calculate the correct settlement dates
         InstructionSettlementDateCalculator.calculateSettlementDates(instructions);

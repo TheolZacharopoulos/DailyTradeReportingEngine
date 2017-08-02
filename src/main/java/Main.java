@@ -1,4 +1,5 @@
-import business_logic.ReportGenerator;
+import business_logic.reports.IReportGenerator;
+import business_logic.reports.ReportGenerator;
 import model.instruction.Instruction;
 import utils.FakeInstructionsGenerator;
 
@@ -8,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         final Set<Instruction> instructions = FakeInstructionsGenerator.getFakeInstructions();
-        final ReportGenerator reportGenerator = new ReportGenerator();
+        final IReportGenerator reportGenerator = new ReportGenerator();
 
         System.out.println(reportGenerator.generateInstructionsReport(instructions));
     }
